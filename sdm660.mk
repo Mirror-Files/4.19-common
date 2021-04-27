@@ -143,10 +143,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
 
-# ATRACE_HAL
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
-
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
@@ -441,17 +437,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi_sdm660-libperfmgr \
+    android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock
-
-# Powerhint
-ifeq ($(EAS_POWERHINT_VARIANT), sdm636)
-    PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-else
-    PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/power-libperfmgr/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-endif
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
@@ -539,8 +526,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
+    vendor/qcom/opensource/power
 
 # Shims
 PRODUCT_PACKAGES += \
