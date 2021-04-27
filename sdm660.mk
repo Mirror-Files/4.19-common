@@ -483,7 +483,10 @@ PRODUCT_PACKAGES += \
 # QTI Performance
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    $(COMMON_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
+    $(COMMON_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    $(COMMON_PATH)/configs/perf/perfboostconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostconfig.xml \
+    $(COMMON_PATH)/configs/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    $(COMMON_PATH)/configs/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
