@@ -800,11 +800,11 @@ vendor/lib/libsubsystem_control.so|fe08da9f6a0e73a97231055c4ca8279a68432476
 vendor/lib64/libSubSystemShutdown.so|c934b2df57be86fdfb9bdf2046f9289af5e7a62c
 vendor/lib64/libsubsystem_control.so|b2e8c7eb9d999137ae99ea38f85d7dac59c6dcc2
 
-# Thermal - from phoenix_sprout-11-RKQ1.201123.002
--vendor/lib/libthermalclient.so|2506026608690f1f91eebbafc622c51857354dfe
--vendor/lib64/libthermalclient.so|11a7b517eff8a0abea205c8cbbd8c21eea528b4f
-vendor/bin/thermal-engine|6dc35e88ec392068357544048a2f50b37ea766d3
-vendor/lib64/libthermalioctl.so|8bf02f5fbd8010f870955c8603b6c2c174168d2b
+# Thermal - from LA.UM.9.12.r1-10800-SMxx50.0
+vendor/bin/thermal-engine|dcac44ec87aae10821d3aabd80684998a10bdfab
+vendor/etc/init/init_thermal-engine.rc|4d0c51054b355080142e47a9bac3d2065a81362a
+-vendor/lib/libthermalclient.so|96dd47b988620b785d5450fe9fcbda90d6959270
+-vendor/lib64/libthermalclient.so|ee1654db87e53a986ca68e6b3e6af2264b86b5d7
 
 # Time services -from LA.UM.9.6.2.r1-04100-89xx.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
